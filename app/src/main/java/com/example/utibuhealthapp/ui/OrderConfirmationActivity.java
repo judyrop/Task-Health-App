@@ -2,6 +2,7 @@ package com.example.utibuhealthapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class OrderConfirmationActivity extends AppCompatActivity {
     @BindView(R.id.paymentRadioGroup) RadioGroup payment;
     @BindView(R.id.proceedButton)
     Button proceedPayment;
+    @BindView(R.id.backButton) Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,16 @@ public class OrderConfirmationActivity extends AppCompatActivity {
                         "\nSelected Payment Option: " + paymentOption;
                 Toast.makeText(OrderConfirmationActivity.this, message, Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OrderConfirmationActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
 
             }
         });
