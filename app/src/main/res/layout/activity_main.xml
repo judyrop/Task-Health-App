@@ -18,52 +18,74 @@
         android:layout_marginBottom="20dp"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CustomerId"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
 
     <EditText
         android:id="@+id/customerIdEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        android:hint="CustomerId"
         android:padding="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:inputType="number"
         android:textColor="@android:color/black"
-        android:textColorHint="@color/colorDivider"
         android:textSize="20sp" />
-        <EditText
-            android:id="@+id/medicationEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:hint="Medication Id"
-            android:padding="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:textColor="@android:color/black"
-            android:textColorHint="@color/colorDivider"
-            android:textSize="20sp" />
-        <EditText
-            android:id="@+id/quantityEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:hint="Quantity"
-            android:padding="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:textColor="@android:color/black"
-            android:textColorHint="@color/colorDivider"
-            android:textSize="20sp" />
 
 
-        <Button
-            android:id="@+id/orderbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Order"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/blue_200"
-            android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication Id"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:id="@+id/medicationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/orderbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="30dp"/>
 
 </LinearLayout>
