@@ -28,7 +28,7 @@
             android:text="Pick Up from Store"
             android:checked="true"/>
 
-        <!-- Delivery Option -->
+
         <RadioButton
             android:id="@+id/deliveryOption"
             android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
             android:text="Cash on Delivery"
             android:checked="true"/>
 
-        <!-- Online Payment Option -->
+
         <RadioButton
             android:id="@+id/onlinePaymentOption"
             android:layout_width="wrap_content"
@@ -75,6 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Proceed to Payment"
+        android:backgroundTint="@color/Green"
         android:layout_marginTop="32dp"/>
 
 </LinearLayout>
